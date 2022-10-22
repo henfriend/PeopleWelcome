@@ -1,8 +1,10 @@
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import HomePage from './HomePage';
+import MyAccount from './MyAccount';
+import Notifications from './Notifications';
+import Settings from './Settings';
 import TopNavBar from './TopNavBar';
-
 
 function App() {
   return (
@@ -10,29 +12,15 @@ function App() {
       <div className="App">
         <TopNavBar/>
         <div className='content'>
-          <Switch>
-            <Route path='/'>
-
-            </Route>
-            <Route path='/notifications'>
-
-            </Route>
-            <Route path='/foryou'>
-
-            </Route>
-            <Route path='/createpost'>
-
-            </Route>
-            <Route path='/messages'>
-
-            </Route>
-            <Route path='/settings'>
-
-            </Route>
-            <Route path='/myaccount'>
-
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path='/' element={ <HomePage/> } />
+            <Route path='/notifications' element={ <Notifications/> } />
+            <Route path='/foryou'/>
+            <Route path='/createpost'/>
+            <Route path='/messages'/>
+            <Route path='/settings' element={ <Settings/> } />
+            <Route path='/myaccount' element={ <MyAccount/> } />
+          </Routes>
         </div>
       </div>
     </Router>
