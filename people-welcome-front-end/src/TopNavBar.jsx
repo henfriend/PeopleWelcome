@@ -1,7 +1,7 @@
 import { BsFillBellFill, BsFillGearFill, BsPersonCircle } from 'react-icons/bs'
 import { Link, NavLink } from 'react-router-dom'
 import SearchBar from './SearchBar'
-import BookData from './books.json'
+import BookData from './Data.json'
 
 function TopNavBar() {
     return(

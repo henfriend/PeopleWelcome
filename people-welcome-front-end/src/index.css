@@ -59,3 +59,75 @@ body {
   align-items: center;
   font-size: x-large;
 }
+
+.navbar .search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 15px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+}
+
+.navbar .searchInputs {
+  margin-top: 10px;
+  display: flex;
+}
+
+.navbar .searchIcon {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.navbar input:focus {
+  outline: none;
+}
+
+.navbar .searchIcon svg {
+  font-size: 15px;
+  color: black;
+}
+
+.navbar .dataResult {
+  margin-top: 5px;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.navbar .dataresult::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar .dataResult .dataItem {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.navbar .dataItem p {
+  margin-left: 10px;
+}
+
+.navbar .search a {
+  text-decoration: none;
+}
+
+.navbar .search a:hover {
+  background-color: lightgray;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
