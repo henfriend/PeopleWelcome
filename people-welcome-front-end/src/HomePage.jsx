@@ -1,9 +1,11 @@
-
+import LeftBar from './LeftBar'
+import Post from './Post'
 
 function HomePage() {
     return(
         <div>
-            <h1>Home Page</h1>
+            <LeftBar/>
+            <Post/>
         </div>
     )
 }
