@@ -95,20 +95,21 @@ body {
 }
 
 .navbar .dataResult {
-  margin-top: 5px;
+  margin-top: 2px;
   width: 300px;
   height: 200px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
+  position: absolute;
 }
 
-.navbar .dataresult::-webkit-scrollbar {
+.navbar .dataResult::-webkit-scrollbar {
   display: none;
 }
 
-.navbar .dataResult .dataItem {
+.navbar .dataItem {
   width: 100px;
   height: 50px;
   display: flex;
@@ -130,4 +131,15 @@ body {
 
 #clearBtn {
   cursor: pointer;
+}
+
+.leftnav {
+  color: teal;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 10px;;
+  height: 40vw;
+  width: 150px;
+  border-style:double;
+  border-width: 0.4vw;
 }
