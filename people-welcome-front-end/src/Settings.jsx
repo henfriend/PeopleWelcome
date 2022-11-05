@@ -1,6 +1,6 @@
 function Settings() {
     return(
-        <div>
+        <div className='settings'>
             <h1>Settings</h1>
             <ul>
                 <li>Change your password</li>
