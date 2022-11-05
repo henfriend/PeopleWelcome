@@ -1,6 +1,8 @@
 function Notifications() {
     return(
-        <h1>Notifications</h1>
+        <div className='notifications'>
+            <h1>Notifications</h1>
+        </div>
     )
 }
 
