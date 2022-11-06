@@ -1,4 +1,4 @@
-import LeftBar from './LeftBar'
+import LeftBar from '../components/LeftBar'
 import Post from '../Post'
 
 function HomePage() {
