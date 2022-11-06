@@ -1,5 +1,5 @@
-import LeftBar from './LeftBar'
-import Post from './Post'
+import LeftBar from '../components/LeftBar'
+import Post from '../Post'
 
 function HomePage() {
     return(
