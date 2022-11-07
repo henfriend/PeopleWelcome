@@ -232,3 +232,43 @@ body {
 .invisible {
   visibility: hidden;
 }
+
+.login h1 {
+  display: block;
+}
+
+.login input {
+  display: block;
+  margin-left: 560px;
+}
+
+.login button {
+  margin: 2px;
+}
+
+.login .bottombutton {
+  background: none;
+  border: none;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login.password {
+  margin-bottom: 2px;
+}
+
+a.button {
+  appearance: button;
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+  border-style: groove;
+  border-color: black;
+  cursor:default;
+}
+
+a.button:hover {
+  background-color: rgb(0, 174, 174);
+}
+

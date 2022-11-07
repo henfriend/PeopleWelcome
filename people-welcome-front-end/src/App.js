@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import LoginPage from './LoginPage'
 import HomePage from './HomePage';
 import MyAccount from './MyAccount';
 import Notifications from './Notifications';
@@ -21,7 +22,7 @@ function App() {
               <Route path='/messages'/>
               <Route path='/settings' element={ <Settings/> } />
               <Route path='/myaccount' element={ <MyAccount/> } />
-              <Route path='/'/>
+              <Route path='/' element={ <LoginPage/> }/>
             </Routes>
           </div>
         </div>
