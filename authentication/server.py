@@ -55,7 +55,13 @@ def handle_auth_error(ex):
     response.status_code = ex.status_code
     return response
 
+<<<<<<< HEAD
 
 # Running app
 if __name__ == '__main__':
     app.run(debug=True)
+=======
+# Running app
+if __name__ == '__main__':
+    app.run(debug=True)
+>>>>>>> f83fb7c (merge test)
