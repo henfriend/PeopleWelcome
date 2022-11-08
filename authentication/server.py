@@ -12,7 +12,20 @@ SECRET: 'placeholder'
 # API_AUDIENCE = YOUR_API_AUDIENCE
 # ALGORITHMS = ["RS256"]
 
-APP = Flask(__name__)
+app = Flask(__name__)
+
+@app.route('/data')
+def get_time():
+  
+    # Returning an api for showing in  reactjs
+    return {
+        'Name':"geek", 
+        "Age":"22",
+        "Date":x, 
+        "programming":"python"
+        }
+  
+      
 
 # Error handler
 class AuthError(Exception):
@@ -20,8 +33,12 @@ class AuthError(Exception):
         self.error = error
         self.status_code = status_code
 
-@APP.errorhandler(AuthError)
+@app.errorhandler(AuthError)
 def handle_auth_error(ex):
     response = jsonify(ex.error)
     response.status_code = ex.status_code
     return response
+
+# Running app
+if __name__ == '__main__':
+    app.run(debug=True)
