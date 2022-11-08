@@ -27,6 +27,22 @@ def get_time():
   
       
 
+
+app = Flask(__name__)
+
+@app.route('/data')
+def get_time():
+  
+    # Returning an api for showing in  reactjs
+    return {
+        'Name':"geek", 
+        "Age":"22",
+        "Date":x, 
+        "programming":"python"
+        }
+  
+      
+
 # Error handler
 class AuthError(Exception):
     def __init__(self, error, status_code):
@@ -38,6 +54,7 @@ def handle_auth_error(ex):
     response = jsonify(ex.error)
     response.status_code = ex.status_code
     return response
+
 
 # Running app
 if __name__ == '__main__':
