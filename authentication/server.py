@@ -39,10 +39,6 @@ def handle_auth_error(ex):
     response.status_code = ex.status_code
     return response
 
-<<<<<<< HEAD
-    #test
-=======
 # Running app
 if __name__ == '__main__':
     app.run(debug=True)
->>>>>>> 6e11f92 (updated routes, and formto add fetch and proxy to flask)
