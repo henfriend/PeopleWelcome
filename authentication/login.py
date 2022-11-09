@@ -1,5 +1,16 @@
 #test login authentication
 
+class TestTestingConfig(TestCase):
+    def create_app(self):
+        app.config.from_object('estingConfig')
+        return app
+
+    def test_app_is_testing(self):
+        self.assertTrue(app.config['DEBUG'])
+        self.assertTrue(
+            app.config['SQLALCHEMY_DATABASE_URI'] == 'auth_test'
+        )
+
 class TestDevelopmentConfig(TestCase):
     def create_app(self):
         app.config.from_object('')
@@ -13,13 +24,3 @@ class TestDevelopmentConfig(TestCase):
         )
 
 
-class TestTestingConfig(TestCase):
-    def create_app(self):
-        app.config.from_object('estingConfig')
-        return app
-
-    def test_app_is_testing(self):
-        self.assertTrue(app.config['DEBUG'])
-        self.assertTrue(
-            app.config['SQLALCHEMY_DATABASE_URI'] == 'auth_test'
-        )
