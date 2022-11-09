@@ -41,7 +41,6 @@ function App() {
         name: "",
         age: 0,
         date: "",
-        programming: "",
     });
   
     // Using useEffect for single rendering
@@ -55,7 +54,6 @@ function App() {
                     name: data.Name,
                     age: data.Age,
                     date: data.Date,
-                    programming: data.programming,
                 });
             })
         );

@@ -9,8 +9,6 @@ from jose import jwt
 AUTH0_DOMAIN = 'dev-8dw5kczis478nxrk.us.auth0.com'
 CLIENTID: 'D1MBSFAqSAo292u9TAZI3tchTuJPir5S'
 SECRET: 'placeholder'
-# API_AUDIENCE = YOUR_API_AUDIENCE
-# ALGORITHMS = ["RS256"]
 
 app = Flask(__name__)
 
@@ -22,7 +20,6 @@ def get_time():
         'Name':"geek", 
         "Age":"22",
         "Date":x, 
-        "programming":"python"
         }
   
       
