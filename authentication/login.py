@@ -23,4 +23,3 @@ class TestDevelopmentConfig(TestCase):
             app.config['SQLALCHEMY_DATABASE_URI'] == 'auth'
         )
 
-
