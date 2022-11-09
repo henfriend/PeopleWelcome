@@ -234,6 +234,7 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .login h1 {
   display: block;
 }
@@ -274,6 +275,8 @@ a.button:hover {
 }
 
 =======
+=======
+>>>>>>> b76e923 (left AI navbar display set up)
 .ai button {
   border-radius: 100%;
 }
@@ -300,5 +303,9 @@ a.button:hover {
 .ai button {
   height: 30px;
   width: 30px;
+<<<<<<< HEAD
+}
+>>>>>>> b76e923 (left AI navbar display set up)
+=======
 }
 >>>>>>> b76e923 (left AI navbar display set up)
