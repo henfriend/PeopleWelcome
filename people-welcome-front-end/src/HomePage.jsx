@@ -1,4 +1,5 @@
 import LeftBar from './LeftBar'
+import RightBar from './RightBar'
 import Post from './Post'
 
 function HomePage() {
@@ -6,6 +7,7 @@ function HomePage() {
         <div>
             <LeftBar/>
             <Post/>
+            <RightBar/>
         </div>
     )
 }

@@ -137,7 +137,18 @@ body {
   color: teal;
   background-color: white;
   margin-top: 20px;
-  margin-left: 10px;;
+  margin-left: 10px;
+  height: 40vw;
+  width: 150px;
+  border-style:double;
+  border-width: 0.4vw;
+}
+
+.rightnav {
+  color: teal;
+  background-color: white;
+  margin-top: 20px;
+  margin-right: 10px;
   height: 40vw;
   width: 150px;
   border-style:double;
