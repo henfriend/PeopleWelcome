@@ -2,7 +2,6 @@
 def add_articles():
     title = request.json['title']
     body = request.json['body']
-
     article = Articles(
         title=title,
         body=body
