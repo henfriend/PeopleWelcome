@@ -10,3 +10,8 @@ function MyAccount() {
 }
 
 export default MyAccount
+
+// change username
+// change password 
+// set user visibility to public vs private 
+
